@@ -1,20 +1,32 @@
-# HAT Corporate site content
+# @corporate/site
 
-## Site content
+Present approved information about HAT Inc. and its services.
 
-- Audience: Japan. Japanese is served at `/`; English is served at `/en/`.
-- Publication boundary: approved corporate and service information only; no customer data, internal records, secrets, or external actions.
+## What you can do
 
-## Local verification
+- Maintain reviewed overview and getting-started content.
+- Validate Japanese/English content and preview the configured site.
 
-```bash
-pnpm install --offline --frozen-lockfile
+## Current scope
+
+Customer records, internal business material and credentials require separate disclosure review. The required localized-site package is referenced as an excluded local archive; a fresh clone cannot install it until an approved distribution path is available. No deployment is performed by these instructions.
+
+## Getting started
+
+The manifest currently requires locally supplied package archives: `@nuxtjp/localized-site`. These archives are excluded from Git. Obtain the exact approved dependency artifacts before installing; a fresh clone alone is not sufficient. Registry distribution remains pending.
+
+Use `pnpm@10.29.3` and the Node.js version declared in `engines` in `package.json`. Run from this repository:
+
+```sh
+pnpm install --frozen-lockfile
 pnpm validate:content
 pnpm typecheck
 pnpm test
 pnpm build
 ```
 
-Run `pnpm dev` only as a foreground loopback preview and stop it with Ctrl+C.
+## Documentation and source
 
-Store local registration values in the Git-excluded `registration/site.config.json`. In a new environment, copy `site.config.example.json` and reference it from the root `site.config.json`.
+[Usage guide](docs/getting-started.md)
+
+[Verification cases](test) · [Contributing](CONTRIBUTING.md) · [Security reporting](SECURITY.md) · [License](LICENSE) · [Attribution notices](NOTICE)
