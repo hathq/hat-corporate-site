@@ -1,0 +1,207 @@
+{
+  "schema": "nuxtjp://localized-site/site-config/v1",
+  "siteId": "hat-corporate",
+  "serviceId": "corporate",
+  "origin": "https://demo-company.co.jp",
+  "audienceScope": "japan",
+  "defaultLocale": "ja",
+  "fallbackLocale": "en",
+  "prefixDefaultLocale": false,
+  "locales": [
+    "ja",
+    "en"
+  ],
+  "externalActions": false,
+  "content": {
+    "ja": {
+      "brand": "Demo Company",
+      "tagline": "事業、製品、運営状況を責任ある境界で公開する公式サイト",
+      "summary": "Demo Companyの公式情報、提供サービス、公開可能な運営状況を案内します。顧客情報、社内資料、認証情報、製品ソースは掲載せず、外部サービスへの操作も行いません。",
+      "features": [
+        {
+          "id": "corporate-profile",
+          "title": "会社情報",
+          "summary": "法人の基本情報、事業目的、責任主体を公開可能な範囲で明示します。"
+        },
+        {
+          "id": "service-portfolio",
+          "title": "サービス案内",
+          "summary": "各製品・メディアの役割と公式導線を、提供中と計画中を区別して案内します。"
+        },
+        {
+          "id": "public-operations",
+          "title": "公開運営情報",
+          "summary": "確認済みの公開状態、更新方針、問い合わせ境界を秘密値なしで共有します。"
+        }
+      ],
+      "docs": {
+        "overview": {
+          "slug": "/docs",
+          "title": "Demo Companyの概要",
+          "summary": "公式サイトが担う情報と、社内システムから分離する情報を説明します。",
+          "sections": [
+            {
+              "id": "company-role",
+              "title": "公式情報の役割",
+              "body": [
+                "このサイトはDemo Companyの事業、製品、公開可能な活動を案内する一次窓口です。各製品の詳細は対応する公式サービスサイトで提供します。"
+              ]
+            },
+            {
+              "id": "disclosure-boundary",
+              "title": "公開境界",
+              "body": [
+                "経営資料、顧客案件、従業員情報、SharePoint文書、認証情報、非公開ソースは公開対象に含めません。公開可否が未確認の情報は掲載しません。"
+              ]
+            }
+          ]
+        },
+        "gettingStarted": {
+          "slug": "/docs/getting-started",
+          "title": "情報を探す",
+          "summary": "目的に合う公式情報へ安全に進むための確認手順です。",
+          "sections": [
+            {
+              "id": "choose-purpose",
+              "title": "目的を選ぶ",
+              "body": [
+                "会社情報、製品情報、技術情報の区分を確認し、案内された公式ドメインへ進んでください。製品契約や個別支援は各サービスの提供状態を確認します。"
+              ]
+            },
+            {
+              "id": "verify-status",
+              "title": "提供状態を確認する",
+              "body": [
+                "計画中、試行中、提供中の表示を区別してください。認証、課金、問い合わせ連携が未接続の場合、このサイトから外部処理は開始されません。"
+              ]
+            }
+          ]
+        },
+        "security": {
+          "slug": "/docs/security",
+          "title": "安全性と情報管理",
+          "summary": "公式サイトに置かない情報と外部連携の原則を示します。",
+          "sections": [
+            {
+              "id": "public-data",
+              "title": "公開データのみ",
+              "body": [
+                "公開承認済みの会社・サービス情報だけを扱います。顧客情報、秘密値、内部観測の原データは掲載せず、公開用の要約へ分離します。"
+              ]
+            },
+            {
+              "id": "external-services",
+              "title": "外部操作を行わない",
+              "body": [
+                "この構成は問い合わせ送信、契約、決済、解析タグ設定、クラウド変更を実行しません。将来接続する場合も、目的、送信項目、責任主体を先に公開します。"
+              ]
+            }
+          ]
+        }
+      },
+      "privacy": {
+        "label": "プライバシー",
+        "summary": "この公開コンテンツは個人情報や顧客情報を保持しません。アクセス解析等を導入する場合は、収集項目、目的、保存期間、拒否方法を公開前に明示します。"
+      },
+      "contact": {
+        "label": "お問い合わせ",
+        "summary": "demo-company.co.jp上で確認済みとして案内される公式窓口のみを利用してください。契約情報、認証情報、顧客データを一般の問い合わせへ記載しないでください。"
+      }
+    },
+    "en": {
+      "brand": "Demo Company",
+      "tagline": "The official source for business, product, and operational information within accountable boundaries",
+      "summary": "This site presents official information about Demo Company, its services, and operational facts approved for publication. It excludes customer data, internal records, credentials, and product source, and it performs no external-service actions.",
+      "features": [
+        {
+          "id": "corporate-profile",
+          "title": "Corporate profile",
+          "summary": "Publishes the legal entity's basic information, business purpose, and accountable owner within the approved public scope."
+        },
+        {
+          "id": "service-portfolio",
+          "title": "Service portfolio",
+          "summary": "Explains each product or publication and its official route while distinguishing available capabilities from plans."
+        },
+        {
+          "id": "public-operations",
+          "title": "Public operations",
+          "summary": "Shares verified publication status, update policy, and contact boundaries without secrets."
+        }
+      ],
+      "docs": {
+        "overview": {
+          "slug": "/docs",
+          "title": "About Demo Company",
+          "summary": "Explains what the corporate site publishes and what remains separated in internal systems.",
+          "sections": [
+            {
+              "id": "company-role",
+              "title": "Role of the official source",
+              "body": [
+                "This site is the primary public entry point for Demo Company's business, products, and publishable activity. Detailed product information is provided by the corresponding official service site."
+              ]
+            },
+            {
+              "id": "disclosure-boundary",
+              "title": "Disclosure boundary",
+              "body": [
+                "Management records, customer engagements, employee data, SharePoint documents, credentials, and private source are excluded. Information whose publication status is unverified is not published."
+              ]
+            }
+          ]
+        },
+        "gettingStarted": {
+          "slug": "/docs/getting-started",
+          "title": "Find the right information",
+          "summary": "A safe path to official information for your purpose.",
+          "sections": [
+            {
+              "id": "choose-purpose",
+              "title": "Choose your purpose",
+              "body": [
+                "Identify whether you need corporate, product, or technical information, then follow the stated official domain. Check each service's availability before relying on subscriptions or individual support."
+              ]
+            },
+            {
+              "id": "verify-status",
+              "title": "Verify availability",
+              "body": [
+                "Distinguish planned, trial, and available labels. When authentication, billing, or inquiry routing is unconnected, this site cannot start those external processes."
+              ]
+            }
+          ]
+        },
+        "security": {
+          "slug": "/docs/security",
+          "title": "Security and information handling",
+          "summary": "Defines excluded information and the external-integration rule.",
+          "sections": [
+            {
+              "id": "public-data",
+              "title": "Public data only",
+              "body": [
+                "Only approved corporate and service information is used. Customer data, secrets, and raw internal observations stay outside this site and are separated from publication summaries."
+              ]
+            },
+            {
+              "id": "external-services",
+              "title": "No external actions",
+              "body": [
+                "This configuration cannot submit inquiries, create contracts, take payments, install analytics, or change cloud resources. Any future connection must first disclose its purpose, transmitted fields, and accountable owner."
+              ]
+            }
+          ]
+        }
+      },
+      "privacy": {
+        "label": "Privacy",
+        "summary": "This public content does not retain personal or customer information. Before analytics or similar processing is introduced, the collected fields, purpose, retention, and opt-out method must be disclosed."
+      },
+      "contact": {
+        "label": "Contact",
+        "summary": "Use only a verified official channel identified on demo-company.co.jp. Do not place contract details, credentials, or customer data in a general inquiry."
+      }
+    }
+  }
+}
