@@ -4,11 +4,11 @@ Present approved information about HAT Inc. and its services.
 
 ## Before you start
 
-Customer records, internal business material and credentials require separate disclosure review. The required localized-site package is referenced as an excluded local archive; a fresh clone cannot install it until an approved distribution path is available. No deployment is performed by these instructions.
+Customer records, internal business material and credentials require separate disclosure review. The localized-site module is pinned to its official public registry release 0.1.4; no local archive is required. No deployment is performed by these instructions.
 
 ## First steps
 
-Make the exact declared dependency artifacts available before installation. Local archives are excluded from Git; registry publication remains pending.
+Install the pinned official public-registry dependencies; no local archive is required.
 
 Run from the repository root:
 
@@ -30,3 +30,5 @@ A passing source-level check establishes only what that check observes. Keep mis
 ## Continue reading
 
 [Repository overview](../README.md)
+
+Owner CI uses only `site.config.example.json` in a temporary checkout, runs dependency regressions, validates content and verifies types/build. It never reads ignored registrations or deploys a site. Final content, host binding and retained-source cleanup remain separate owner decisions.
