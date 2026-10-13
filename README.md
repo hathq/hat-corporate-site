@@ -34,3 +34,5 @@ pnpm build
 Owner CI uses only `site.config.example.json` in a temporary checkout, runs dependency regressions, validates content and verifies types/build. It never reads ignored registrations or deploys a site. Final content, host binding and retained-source cleanup remain separate owner decisions.
 
 [日本語](README.ja.md)
+
+[OSS responsibility and source completion](docs/oss-source-contract.md) defines the supported package boundary and required acceptance. It does not declare unexecuted source, distribution or production checks complete.
