@@ -9,11 +9,11 @@ Present approved information about HAT Inc. and its services.
 
 ## Current scope
 
-Customer records, internal business material and credentials require separate disclosure review. The localized-site module is pinned to its official public registry release 0.1.4; no local archive is required. No deployment is performed by these instructions.
+Customer records, internal business material and credentials require separate disclosure review. The localized-site module is obtained from the public registry and updated through Dependabot PRs. No deployment is performed by these instructions.
 
 ## Getting started
 
-Install the pinned official public-registry dependencies. No private registry or locally supplied TGZ is required.
+Install the public-registry dependencies declared in this repository. No private registry or locally supplied TGZ is required.
 
 Use `pnpm@10.29.3` and the Node.js version declared in `engines` in `package.json`. Run from this repository:
 
@@ -36,3 +36,5 @@ Owner CI uses only `site.config.example.json` in a temporary checkout, runs depe
 [日本語](README.ja.md)
 
 [OSS responsibility and source completion](docs/oss-source-contract.md) defines the supported package boundary and required acceptance. It does not declare unexecuted source, distribution or production checks complete.
+
+Dependency updates: [repository policy](docs/dependency-updates.md).
